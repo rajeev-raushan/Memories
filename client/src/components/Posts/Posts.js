@@ -9,14 +9,13 @@ import useStyles from "./styles";
 const Posts = ({ setCurrentId }) => {
   const posts = useSelector((state) => state.posts);
   const classes = useStyles();
-  console.log(posts);
   return !posts.length ? (
     <CircularProgress />
   ) : (
     <Grid
       className={classes.conatiner}
       container
-      alignsItems="Streach"
+      alignsitems="Streach"
       spacing={3}
     >
       {posts.map((post) => (

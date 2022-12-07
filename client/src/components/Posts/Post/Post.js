@@ -15,7 +15,6 @@ import moment from "moment";
 import useStyles from "./styles";
 
 const Post = ({ post, setCurrentId }) => {
-  console.log(post);
   const classes = useStyles();
   return (
     <Card className={classes.card}>
@@ -37,7 +36,7 @@ const Post = ({ post, setCurrentId }) => {
           size="small"
           onClick={() => setCurrentId(post._id)}
         >
-          <MoreHorizIcon fontSize="default" />
+          <MoreHorizIcon fontSize="medium" />
         </Button>
       </div>
       <div className={classes.details}>
